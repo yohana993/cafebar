@@ -37,6 +37,11 @@ if (usuario) {
         document.getElementById('menuUsuario2').hidden = true;
     }
 }
+document.getElementById('addButton').addEventListener('click', function() {
+    if (confirm('¿Estás seguro de que deseas cerrar sesión?')) {
+        window.location.href = 'inicio.html';
+    }
+});
 
 // Aca es para confirmar la eliminación de un usuario
 function confirmarRegistro() {

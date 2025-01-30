@@ -5,6 +5,11 @@ if (usuario){
         document.getElementById('menuUsuario2').hidden = true
     }
 }
+document.getElementById('addButton').addEventListener('click', function() {
+    if (confirm('¿Estás seguro de que deseas cerrar sesión?')) {
+        window.location.href = 'inicio.html';
+    }
+});
 
 const proveedor = JSON.parse(sessionStorage.getItem('proveedorActual'))
 //document.getElementById('id').value = proveedor.id
