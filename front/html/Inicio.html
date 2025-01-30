@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Bar</title>
+    <link rel="stylesheet" href="/front/css/Style.css">
+</head>
+<body>
+    <div id="mensajeBienvenida">
+        <h1 class="bienvenute">Bienvenidos al Cafe Bar</h1>
+        <button id="btnIngresar">Ingresar</button>
+    </div>
+
+    <div class="login-container" id="loginContainer" style="display: none;">
+        <h3 class="Login">Inicio De Sesion</h3>
+        <form id="loginForm"> 
+            <div class="input-group">
+                <label for="username">Usuario</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <button type="submit">Ingresar</button>
+            </div>
+            <div class="forgot-password">
+                <a href="/forgot-password">¿Olvidó su Contraseña?</a>
+            </div>
+        </form>
+    </div>
+
+<footer>
+    <p>&copy; 2014 Cafe Bar, Todos los derechos reservados.</p>
+</footer>
+    <script src="/front/js/sesion.js"></script>
+</body>
+</html>

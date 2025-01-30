@@ -1,0 +1,321 @@
+* 
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url(/front/images/img.png) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1, h2 {
+    color: #333;
+}
+h3 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 28px;
+}
+h4 {
+    color: #ccc;
+    text-align: center;
+}
+
+.bienvenute {
+    color: white;
+}
+
+.hero-content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero p {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.login-container {
+    background: rgb(197, 192, 192);
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    display: none;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none; /* Clase para ocultar elementos */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #325f5b;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background: #325f5b;
+}
+
+.forgot-password {
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    color: #325f5b;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav {
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end; /* Alinea los elementos de la lista del menú a la derecha */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #325f5b;
+}
+
+/*.logo {
+    width: 150px;
+    padding-left: 20px;
+}*/
+
+footer {
+    background-color: #325f5b;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 600px; /* Ajusta el ancho según sea necesario */
+    margin: auto;
+    border: 1px solid #ccc; /* Borde alrededor del contenedor */
+    padding: 20px; /* Espacio interno */
+    border-radius: 8px; /* Bordes redondeados */
+}
+.form-group {
+    flex: 1 1 45%; /* Dos columnas */
+    margin-bottom: 15px;
+    position: relative; /* Para posicionar la división */
+}
+.form-group:not(:last-child) {
+    border-right: 1px solid #ccc; /* Línea divisoria entre columnas */
+    padding-right: 15px; /* Espacio a la derecha */
+}
+.form-group:last-child {
+    padding-right: 0; /* Sin espacio a la derecha en la última columna */
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box; /* Para incluir padding en el ancho total */
+}
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/*Proveedores*/
+.button1 {
+    display: inline-block;
+    background-color: #325f5b; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin: 10px 5px;
+    
+}
+.button1:hover {
+    background-color: #29b6f6; 
+}
+.contenedor2 {
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    margin: 20px 0; /* Espaciado vertical (ajusta según sea necesario) */
+}
+.contenedor5 {
+    display: flex;
+    justify-content: flex-end; /* Alinea el botón de "Cerrar sesión" a la derecha */
+    margin: 20px 0; /* Ajusta el espacio */
+}
+.table-container1 {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #325f5b; /* Azul claro */
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+.container1 {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    /*background-color: #ffffff;*/
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*añadir proveedores*/
+.container2 {
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+.button5 {
+    display: inline-block;
+    background-color: transparent; /* Botón transparente */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: 2px solid transparent; /* Borde transparente */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Centrar el texto */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    transition: background-color 0.3s, border-color 0.3s; /* Transiciones suaves */
+}
+
+.button5:hover {
+    background-color: #325f5b; /* Color al pasar el mouse */
+    border-color: #325f5b; /* Cambiar el borde al pasar el mouse */
+}
+
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh; /* Altura reducida para móviles */
+        min-height: 300px;
+        background-attachment: scroll; /* Mejor rendimiento en móviles */
+    }
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+}

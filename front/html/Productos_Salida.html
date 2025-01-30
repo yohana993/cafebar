@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salida Productos</title>
+    <link rel="stylesheet" href="/front/css/Style.css">
+</head>
+<body>
+<header>
+    <div>
+        <div class="menu container">
+            <label for="menu">
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="/front/html/Menu.html">INICIO</a></li>
+                    <li id="menuUsuario1"><a href="/front/html/Usuarios.html">USUARIOS</a></li>
+                    <li><a href="/front/html/Productos.HTML">PRODUCTOS</a></li>
+                    <li id="menuUsuario2"><a href="/front/html/Proveedores.HTML">PROVEEDORES</a></li>
+                </ul>
+            </nav>
+            <div class="contenedor5">
+                <a href="/front/html/Inicio.html" class="button5" id="addButton">
+                    <span>Cerrar</span><br>
+                    <span>Sesión</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <h3>Formulario de Salida de Productos</h3>
+    <form id="salidaProductoForm" onsubmit="procesarSalidaProducto(event)">
+        <div class="form-container">
+            <div class="form-group">
+                <label for="categoria1">Categoría</label>
+                <select id="categoria1" name="categoria1" required >
+                    <option value="0">Seleccione una categoría</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="producto1">Producto</label>
+                <select id="producto1" name="producto1" required>
+                    <option value="0">Seleccione un producto</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="cantidad">Cantidad</label>
+                <input type="number" id="cantidad" name="cantidad" required pattern="^\d+$" title="En la cantidad solo debe contener números.">
+            </div>
+        </div>
+        <button type="submit">Confirmar</button>
+    </form>
+    <div class="contenedor2">
+        <a href="/front/html/Productos.HTML" class="button1" id="addButton">Atras</a>
+    </div>
+</main>
+<footer>
+    <p>&copy; 2014 Cafe Bar, Todos los derechos reservados.</p>
+</footer>
+
+<script src="/front/js/productosVenta.js"></script>
+</body>
+</html>

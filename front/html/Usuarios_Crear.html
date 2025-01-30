@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Usuarios</title>
+    <link rel="stylesheet" href="/front/css/Style.css">
+</head>
+<body>
+<header>
+    <div>
+        <div class="menu container">
+            <label for="menu">
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="/front/html/Menu.html">INICIO</a></li>
+                    <li id="menuUsuario1"><a href="/front/html/Usuarios.html">USUARIOS</a></li>
+                    <li><a href="/front/html/Productos.HTML">PRODUCTOS</a></li>
+                    <li id="menuUsuario2"><a href="/front/html/Proveedores.HTML">PROVEEDORES</a></li>
+                </ul>
+            </nav>
+            <div class="contenedor5">
+                <a href="/front/html/Inicio.html" class="button5" id="addButton">
+                    <span>Cerrar</span><br>
+                    <span>Sesión</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <h3>Formulario de Registro de Usuarios</h3>
+    <form id="crearUsuarioForm" onsubmit="procesarCreacionUsuario(event)">
+        <div class="form-container">
+            <div class="form-group">
+                <label for="nombres">Nombres</label>
+                <input type="text" id="nombres" name="nombres" required pattern="^[a-zA-Z]+$" title="En nombres solo debe contener letras.">
+            </div>
+            <div class="form-group">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" name="apellidos" required pattern="^[a-zA-Z]+$" title="En apellidos solo debe contener letras.">
+            </div>
+            <div class="form-group">
+                <label for="documento">Documento</label>
+                <input type="text" id="documento" name="documento" required pattern="^\d{8,10}$" title="El ID debe tener entre 8 y 10 dígitos. Solo se permiten números.">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required pattern="^[a-zA-Z0-9._%+-]+@(gmail\.com|hotmail\.com|outlook\.com|yahoo\.com)$" title="Por favor, ingrese un correo electrónico válido (gmail.com, hotmail.com, outlook.com, yahoo.com)">
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" required pattern="^\d{7,10}$" title="El teléfono debe tener entre 7 y 10 dígitos. Solo se permiten números.">
+            </div>
+            <div class="form-group">
+                <label for="rol">Rol</label>
+                <select id="rol" name="rol" required>
+                    <option value="0"></option>
+                </select>
+            </div>
+        </div>
+        <button type="submit">Crear</button>
+    </form>
+    <div class="contenedor2">
+        <a href="/front/html/Usuarios.html" class="button1" id="addButton">Atras</a>
+    </div>
+</main>
+<footer>
+    <p>&copy; 2014 Cafe Bar, Todos los derechos reservados.</p>
+</footer>
+
+<script src="/front/js/usuarios.js"></script>
+</body>
+</html>

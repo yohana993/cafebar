@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proveedores</title>
+    <link rel="stylesheet" href="/front/css/Style.css">
+</head>
+<body>
+<header>
+<div>
+    <div class="menu container">
+        <label for="menu">
+        </label>
+        <nav>
+            <ul>
+                <li><a href="/front/html/Menu.html">INICIO</a></li>
+                <li id="menuUsuario1"><a href="/front/html/Usuarios.html">USUARIOS</a></li>
+                <li ><a href="/front/html/Productos.HTML">PRODUCTOS</a></li>
+                <li id="menuUsuario2"><a href="/front/html/Proveedores.HTML">PROVEEDORES</a></li>
+            </ul>
+        </nav>
+        <div class="contenedor5">
+            <a href="/front/html/Inicio.html" class="button5" id="addButton">
+                <span>Cerrar</span><br>
+                <span>Sesión</span>
+            </a>
+        </div>
+    </div>
+</div>
+</header>
+<main class="container1">
+    <h3 class="center-align1">Gestión de Proveedores</h3>
+    <div class="contenedor2">
+        <a href="/front/html/Menu.html" class="button1" id="addButton">Atras</a>
+        <a href="/front/html/Proveedores_Anadir.html" class="button1" id="addButto">Añadir Proveedor</a>
+        <!-- <a href="Proveedores_Actualizar.html" class="button1" id="updateButto">Actualizar Proveedor</a>
+        <a href="Proveedores_Eliminar.html" class="button1" id="deleteButto">Eliminar Proveedor</a> -->
+    </div>
+    <div class="table-container1" id="providerTable">
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>NIT</th>
+                    <th>Nombre</th>
+                    <th>Contacto</th>
+                    <th>Email</th>
+                    <th>Dirección</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="providerList">
+                <!-- Proveedores se cargarán aquí dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+</main>
+
+<footer>
+  <p>&copy; 2014 Cafe Bar, Todos los derechos reservados.</p>
+</footer>
+
+<script src="/front/js/proveedores.js"></script>
+</body>
+</html>
