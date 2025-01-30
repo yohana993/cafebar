@@ -21,8 +21,12 @@ if (usuario) {
         document.getElementById('menuUsuario2').hidden = true;
     }
 }
-document.getElementById('addButton').addEventListener('click', function() {
+else
+    window.location.href = "Inicio.html";
+
+document.getElementById('cerrarSesion').addEventListener('click', function() {
     if (confirm('¿Estás seguro de que deseas cerrar sesión?')) {
+        sessionStorage.removeItem('UsuarioActual');
         window.location.href = 'inicio.html';
     }
 });
