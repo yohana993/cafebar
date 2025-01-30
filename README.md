@@ -33,4 +33,4 @@ Licencia
 Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
 
 Contacto
-Para cualquier duda o sugerencia, por favor contacta a nyvillarraga@gmail.com
+Para cualquier duda o sugerencia, por favor contacta a example@example.com
