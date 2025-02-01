@@ -25,10 +25,11 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
             sessionStorage.setItem('UsuarioActual', JSON.stringify(result));
             window.location.href = "Menu.html";
         } else {
-            // Mostrar mensaje de error
+            alert('Usuario o contraseña incorrectos.');
         }
     })
     .catch(error => {
         console.error('Error en la solicitud:', error);
+        alert('Usuario y/o contraseña incorrectos, Intenta de nuevo.');
     });
 });
